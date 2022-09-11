@@ -28,11 +28,13 @@ public class Lab1 : MonoBehaviour
 
         Debug.Log("|v2| = " + (Vector3.Magnitude(v2)));
 
-        Debug.Log(Vector3.Angle(v1, v2));
+        Debug.Log("Angle = " +  Vector3.Angle(v1, v2));
 
-        
+        Debug.Log("Angle second method = " + 180 / Mathf.PI * Mathf.Acos(Vector3.Dot(v1, v2)/(Vector3.Magnitude(v1) * Vector3.Magnitude(v2))));
 
-        
+
+
+
 
     }
 
